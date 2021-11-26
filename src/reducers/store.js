@@ -3,7 +3,7 @@ import reducerGitHub from "./gitHubProfile"
 import { configureStore } from "@reduxjs/toolkit";
 
 export default configureStore({
-    reducerGitHub: {
+    reducer: {
         gitHub: reducerGitHub,
     },
     middleware: [thunk],

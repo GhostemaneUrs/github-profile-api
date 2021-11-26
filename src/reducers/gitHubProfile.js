@@ -5,7 +5,7 @@ const stateInicial = {
 
 const reducerState = (state = stateInicial, action) => {
     switch (action.type) {
-        case 'USUARIOS_REQUERIDOS':
+        case 'USUARIO_REQUERIDOS':
             return {
                 ...state,
                 usuarios: action.payload,
