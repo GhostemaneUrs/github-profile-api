@@ -11,7 +11,6 @@ const DetailsUserApp = () => {
     const [dataUser, setDataUser] = useState(false);
     const location = useLocation();
     const user = location.state;
-    console.log(repositories);
     useEffect(() => {
         getUser();
         // eslint-disable-next-line
