@@ -112,6 +112,58 @@ body {
   padding: 1rem;
 }
 
+.details-container {
+  width: 100%;
+  height: auto;
+  padding: 3rem;
+  border-radius: 15px;
+  margin-top: 20px;
+  box-shadow: var(--lm-shadow-inactive);
+  background-color: var(--lm-bg-content);
+}
+
+.details-item {
+  width: 100%;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.avatar-details {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 100%;
+}
+
+.details-item-text {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  padding: 1rem 1rem 1rem 2rem;
+}
+
+.container-details {
+  display: flex;
+  width: 100%;
+}
+
+.organizaciones-container {
+  display: flex;
+  flex: 1 0 0%;
+  flex-direction: column;
+}
+
+.repositorios {
+  width: 100%;
+  max-height: 400px;
+  overflow: auto;
+}
+
+.repositorios-container {
+  display: flex;
+  flex: 1 0 0%;
+}
+
 .profile-header {
   display: flex;
 }
@@ -140,6 +192,15 @@ body {
 }
 
 .user {
+  color: var(--btn);
+}
+
+.titulos {
+  font-weight: bold;
+  color: var(--lm-text-alt);
+}
+
+.user-details {
   color: var(--btn);
 }
 
@@ -334,7 +395,7 @@ body {
   }
 
   .profile-content {
-      width: 100%;
+    width: 100%;
   }
 
   .bio {
