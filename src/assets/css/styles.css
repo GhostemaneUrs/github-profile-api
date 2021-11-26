@@ -112,8 +112,78 @@ body {
   padding: 1rem;
 }
 
+.details-container {
+  width: 100%;
+  height: auto;
+  padding: 3rem;
+  border-radius: 15px;
+  position: relative;
+  box-shadow: var(--lm-shadow-inactive);
+  background-color: var(--lm-bg-content);
+}
+
+.details-item {
+  width: 100%;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.avatar-details {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+}
+
+.details-item-text {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  padding: 1rem 1rem 1rem 2rem;
+}
+
+.container-details {
+  display: block;
+  width: 100%;
+}
+
+.organizaciones-container {
+  display: flex;
+  flex: 1 0 0%;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.repositorios {
+  width: 100%;
+  border-bottom: 1px solid rgb(161, 161, 161);
+  margin-bottom: 1rem;
+}
+
+.repo-cont {
+  width: 100%;
+  overflow: auto;
+  padding-right: 0.8rem;
+  max-height: 400px;
+}
+
+.repositorios-container {
+  display: flex;
+  flex: 1 0 0%;
+}
+
 .profile-header {
   display: flex;
+}
+
+.text-repo {
+  color: var(--btn);
+  text-decoration: none;
+}
+
+.text-repo:hover {
+  text-decoration: underline !important;
+  color: var(--btn)
 }
 
 .avatar {
@@ -140,6 +210,15 @@ body {
 }
 
 .user {
+  color: var(--btn);
+}
+
+.titulos {
+  font-weight: bold;
+  color: var(--lm-text-alt);
+}
+
+.user-details {
   color: var(--btn);
 }
 
@@ -208,6 +287,37 @@ body {
 .active {
   box-shadow: var(--lm-shadow-active);
 }
+
+.icon-arow {
+  width: 23px;
+  top: 15px;
+  left: 20px;
+  position: absolute;
+}
+
+
+/* width */
+.repo-cont::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.repo-cont::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 4px rgb(180, 180, 180);
+  border-radius: 10px;
+}
+
+/* Handle */
+.repo-cont::-webkit-scrollbar-thumb {
+  background: #0079ff;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.repo-cont::-webkit-scrollbar-thumb:hover {
+  background: #006eff;
+}
+
 
 /* Media Querys */
 @media screen and (min-width: 768px) {
@@ -290,8 +400,18 @@ body {
     margin-right: 10px;
     min-width: 106px;
   }
+
 }
 @media screen and (min-width: 1200px) {
+  .organizaciones-container {
+    margin-bottom: 0rem;
+  }
+  .details-item {
+    display: flex;
+  }
+  .container-details {
+    display: flex;
+  }
   .container {
     max-width: 1000px;
     margin-top: 50px;
@@ -334,7 +454,7 @@ body {
   }
 
   .profile-content {
-      width: 100%;
+    width: 100%;
   }
 
   .bio {
