@@ -18,7 +18,6 @@ export const getGitHubProfile = (payload) => {
         axios.get(`https://api.github.com/search/users?q=${payload}&page=1`)
             .then(res => {
                 dispatch(usuarioRequeridos(res?.data?.items));
-                console.log(res)
                 if (res?.data?.items.length === 0) {
                     Swal.fire({
                         icon: 'error',
