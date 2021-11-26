@@ -4,7 +4,7 @@ const ProfileCard = ({ user }) => {
     const navigate = useNavigate();
     return (
         <>
-            <div className="profile-container" onClick={() =>
+            <div className="profile-container cursor-pointer" onClick={() =>
                 navigate("/DetailsUserApp", {
                     state: user,
                 })
