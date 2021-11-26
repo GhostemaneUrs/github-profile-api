@@ -9,7 +9,6 @@ const SearchBar = () => {
     const [search, setSearch] = useState("");
     const dispatch = useDispatch();
     const { usuarios } = useSelector(state => state.gitHub);
-    console.log(usuarios);
     const buscar = () => {
         if (search.trim() === "") {
             Swal.fire({
@@ -20,12 +19,13 @@ const SearchBar = () => {
         } else {
             dispatch(getGitHubProfile(search));
         }
+        setSearch("");
     }
     return (
         <>
             <div className="flex justify-between items-center container-searchbar active">
                 <label className="flex-1" for="input">
-                    <input type="search" name="user-input" id="inputSearch" className="inputSearch" placeholder="Search Github username.." onChange={(e) => setSearch(e.target.value)} />
+                    <input type="search" name="user-input" id="inputSearch" className="inputSearch" placeholder="Search Github username.." onChange={(e) => setSearch(e.target.value)} value={search} />
                 </label>
                 <button className="btn-search" onClick={buscar}>Search</button>
             </div>
