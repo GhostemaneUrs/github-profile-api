@@ -40,8 +40,8 @@ const DetailsUserApp = () => {
                     <div className="details-item-text">
                         <h2 className="text-5xl titulos">{dataUser?.name ? dataUser?.name : user?.login}</h2>
                         <h2 className="text-2xl user-details">@{user?.login}</h2>
-                        <h2 className="text-2xl">{dataUser ? dataUser?.company : "Not found"}</h2>
-                        <h2 className="text-2xl">{dataUser ? dataUser?.bio : "No descriptions"}</h2>
+                        <h2 className="text-2xl">{dataUser?.company ? dataUser?.company : "Not company"}</h2>
+                        <h2 className="text-2xl">{dataUser?.bio ? dataUser?.bio : "Not biography"}</h2>
                     </div>
                 </div>
                 <div className="container-details">
@@ -68,7 +68,7 @@ const DetailsUserApp = () => {
                                             <div className="flex w-full justify-between">
                                                 <div>
                                                     <h2 className="text-2xl text-repo user-details cursor-pointer" onClick={() => window.open(repositories.html_url, '_blank')}>{repositories.name}</h2>
-                                                    <p className="text-xl">{repositories?.description ? repositories?.description : 'Not found'}</p>
+                                                    <p className="text-xl">{repositories?.description ? repositories?.description : 'Not descriptions'}</p>
                                                 </div>
                                                 <div>
                                                     <p className="text-sm">
