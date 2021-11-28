@@ -1,6 +1,6 @@
 # GitHub Profile Search
 
-Sean usado las siguientes tecnologias para la realizacion de este proyecto; ReactJs, Redux, Redux Thunk, Redux Toolkit, Tailwindcss todas estas cumplieron un papel demasiado fuerte en el desarrollo de esta aplicación
+Se han usado las siguientes tecnologias para la realizacion de este proyecto; ReactJs, Redux, Redux Thunk, Redux Toolkit, Tailwindcss. Todas estas cumplieron un papel demasiado fuerte en el desarrollo de esta aplicación
 
 ## Caracteristicas
 - ReactJs: Fue utilizado para construir la página web de manera interactiva y responsive
