@@ -27,7 +27,7 @@ yarn
 yarn start
 ```
 
-## Previsualizacion del proyecto
+## Previsualización del proyecto
 ![Diseño final de github profile](./src/assets/design/preview-1.png)
 ![Diseño final de github profile](./src/assets/design/preview-2.png)
 ![Diseño final de github profile](./src/assets/design/preview-3.png)
