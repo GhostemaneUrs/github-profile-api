@@ -26,7 +26,6 @@ cd GitHubProfile
 yarn
 yarn start
 ```
-
 ## Previsualización del proyecto
 ![Diseño final de github profile](./src/assets/design/preview-1.png)
 ![Diseño final de github profile](./src/assets/design/preview-2.png)
